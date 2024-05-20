@@ -1,0 +1,179 @@
+body {
+    background-color: rgba(0, 0, 0, 0.763);
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  /* Navbar styling */
+  .navbar {
+    background-color: rgba(0, 0, 0, 0.434);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 1rem; /* Changed from 0cm to add padding */
+  }
+  
+  .navbar-brand,
+  .navbar-nav .nav-link {
+    font-size: 1rem; /* Changed from 3px to a more readable size */
+  }
+  
+  /* Navbar animation */
+  .navbar-nav .nav-link {
+    position: relative;
+    font-size: 1.8rem; /* This is a good size, no change needed */
+    color: #ffffff !important; /* Changed comment to reflect the actual color (white) */
+    margin-right: 30px;
+  }
+  
+  .navbar button{
+    border: 2px solid orange !important;
+  }
+  
+  .navbar-nav .nav-link::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    bottom: 0;
+    left: 0;
+    background-color: orange;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .navbar-nav .nav-link:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+  
+  /* Search bar styling */
+  .form-control {
+    background-color: transparent;
+    color: rgb(236, 228, 228); /* Changed comment to reflect the actual color (light grey) */
+    border-color: orange;
+    width: 300px;
+    height: 60px; /* Adjusted height for better visibility */
+    font-size: 20px;
+  }
+  
+  .form-control:hover {
+    background-color: rgba(0, 0, 0, 0.432);
+    color: white;
+    border-color: orange;
+  }
+  
+  .btn-outline-success {
+    color: rgb(247, 247, 247); /* Changed comment to reflect the actual color (off-white) */
+    border-color: orange;
+    font-size: 20px;
+    padding: 10px 20px;
+  }
+  
+  .btn-outline-success:hover {
+    color: rgb(0, 0, 0);
+    background-color: orange;
+  }
+  
+  ::placeholder {
+    color: rgb(250, 249, 248); /* Changed comment to reflect the actual color (off-white) */
+  }
+  
+  .form-control::placeholder {
+    color: white;
+  }
+  
+  .c-video {
+      display: flex;
+      justify-content: center; /* Center horizontally */
+      align-items: center; /* Center vertically */
+      height: auto; /* Changed from 100% to auto to maintain aspect ratio */
+      object-fit: cover;
+  }
+  
+  .c-video iframe {
+      object-fit: cover;
+      height: 700px;
+      width: 95%;
+  }
+  
+  .button-container {
+    margin: 30px 0;
+    text-align: center; /* Center the buttons horizontally */
+    height: 100px; /* Adjust the height of the container */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .car-btn {
+    margin-right: 10px;
+    color: white;
+    border: 1px solid orange;
+    background-color: rgba(0, 0, 0, 0.155);
+    border-radius: 30px;
+    padding: 15px 30px; /* Adjust padding to increase button size */
+    font-size: 24px; /* Adjust font size to increase button size */
+  }
+  
+  .car-btn:hover {
+    background-color: orange; /* Change background color to orange on hover */
+  }
+
+  .episode-buttons {
+    margin-top: 25px;
+    text-align: center;
+  }
+  
+  .episode-btn {
+    margin-right: 10px;
+    margin-bottom: 25px;
+    color: white;
+    border: 1px solid orange;
+    background-color: rgba(0, 0, 0, 0.155);
+    border-radius: 30px;
+    padding: 15px 30px;
+    font-size: 18px;
+  }
+  
+  .episode-btn:hover {
+    background-color: orange;
+  }
+  
+  .container-des {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 70px;
+   
+    border-radius: 10px; /* Set border radius */
+  }
+  
+  .description {
+    background-color: #02020290;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid orange;  
+  }
+
+  .c-ep {
+    background-color: #02020290;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid orange;  
+  }
+  
+  h1 {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  p {
+    font-size: 22px;
+    line-height: 1.5;
+  }
