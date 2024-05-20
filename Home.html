@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="navbar-animation.css"> 
+  <link rel="stylesheet" href="Home.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <title>Home</title>
+</head>
+<body>
+   
+  <nav class="navbar navbar-expand-lg navbar-dark "id="navbar">
+        
+    <div class="container-fluid">
+      
+      <button class="navbar-toggler" style="border: 2px solid orange;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <a href="Frontpage.html">
+        <img src="movies_hub-removebg-preview.png" style="height: 150px; width: 175px; margin-right: 50px;">
+      </a>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="Home.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Movie.html">Movies</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Tv Shows.html">TV Shows</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="genreDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Genre
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="genreDropdown">
+            <li><a class="dropdown-item" href="/Genre/Action.html">Action</a></li>
+            <li><a class="dropdown-item" href="#">Adventure</a></li>
+            <li><a class="dropdown-item" href="#">Comedy</a></li>
+            <li><a class="dropdown-item" href="#">Drama</a></li>
+            <li><a class="dropdown-item" href="#">Horror</a></li>
+            <li><a class="dropdown-item" href="#">Romance</a></li>
+            <li><a class="dropdown-item" href="#">Sci-Fi</a></li>
+            <li><a class="dropdown-item" href="#">Thriller</a></li>
+            <li><a class="dropdown-item" href="#">Mystery</a></li>
+            
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Books.html">Books</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Premium.html">Premium</a>
+        </li>
+      </ul>
+      </div>
+      <form class="d-flex s-search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+  <section>
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active c-item">
+        <img src="Picture/carousel/CAR 1.jpg" class="d-block w-100 c-img" alt="...">
+        <div class="carousel-caption d-none d-md-block c-capt">
+          <h5>Dark Phoenix</h5>
+          <p>The X-Men face their most formidable and powerful foe when one of their own, Jean Grey,<br> starts to spiral out of control. During a rescue mission in outer space, Jean is nearly killed<br> when she's hit by a mysterious cosmic force. Once she returns home, this force not only makes<br> her infinitely more powerful, but far more unstable. The X-Men must now band together to<br> save her soul and battle aliens that want to use Grey's new abilities to rule the galaxy.</p>
+          
+          <a href="/MoviePages/DarkPhoenix.html" class="btn btn-primary car-btn">Watch</a>
+        </div>
+      </div>
+      <div class="carousel-item c-item">
+        <img src="Picture/carousel/car 6.jpg" class="d-block w-100 c-img" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Fall</h5>
+          <p>For best friends Becky and Hunter, life is all about conquering fears and pushing limits.<br> However, after they climb 2,000 feet to the top of a remote, abandoned radio tower, they find<br> themselves stranded with no way down. Now, their expert climbing skills<br> are put to the ultimate test as they desperately fight to survive the elements,<br> a lack of supplies, and vertigo-inducing heights.</p>
+          <a href="/MoviePages/Fall.html" class="btn btn-primary car-btn">Watch</a>
+        </div>
+      </div>
+      <div class="carousel-item c-item">
+        <img src="Picture/carousel/car 3.jpg" class="d-block w-100 c-img" alt="...">
+        <div class="carousel-caption d-none d-md-block c-capt">
+          <h5>Men in Black 3</h5>
+          <p>Even though agents J and K have been protecting the Earth from alien scum for many years,<br> J still does not know much about his gruff partner. However, J soon gets an unexpected chance<br> to find out what makes K tick when an alien criminal called Boris the Animal escapes,<br> goes back to 1969, and kills K. With the fate of the planet at stake, J goes back in time<br> and teams up with K's younger self to put things right.</p>
+          <a href="/MoviePages/MenInBlack.html" class="btn btn-primary car-btn">Watch</a>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</section>
+  <br>
+  <section class="movie-card">
+  <h3 class="genre">Featured</h3>
+  <div class="row">
+    <div class="col">
+      <div class="card">
+        <img src="Picture/card/card 1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Hacksaw Ridge</h5>
+          
+          <div class="stars">
+            <i style="font-size:24px" class="fa">&#xf006;</i>
+            <i style="font-size:24px" class="fa">&#xf006;</i>
+            <i style="font-size:24px" class="fa">&#xf006;</i>
+            <i style="font-size:24px" class="fa">&#xf006;</i>
+            <i style="font-size:24px" class="fa">&#xf006;</i>
+          </div>
+          <a href="/MoviePages/HacksawRidge.html" class="btn btn-primary">Watch</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="Picture/card/card 2.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Oppenheimer</h5>
+          
+          <div class="stars">
+            <i style="font-size:24px" class="fa">&#xf006;</i>
+            <i style="font-size:24px" class="fa">&#xf006;</i>
+            <i style="font-size:24px" class="fa">&#xf006;</i>
+            <i style="font-size:24px" class="fa">&#xf006;</i>
+           
+          </div>
+          <a href="MoviePages/OpenHeimer.html" class="btn btn-primary">Watch</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="Picture/card/card 3.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">The Ministry of Ungentlemanly Warfare</h5>
+          
+          <div class="stars">
+            <i style="font-size:24px" class="fa">&#xf006;</i>
+            <i style="font-size:24px" class="fa">&#xf006;</i>
+            <i style="font-size:24px" class="fa">&#xf006;</i>
+          </div>
+          
+          <a href="MoviePages/TheMinistryOfWarfare.html" class="btn btn-primary">Watch</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="Picture/card/card 4.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Mortal Kombat</h5>
+          
+          <div class="stars">
+            <i style="font-size:24px" class="fa">&#xf006;</i>
+            <i style="font-size:24px" class="fa">&#xf006;</i>
+            <i style="font-size:24px" class="fa">&#xf006;</i><i style="font-size:24px" class="fa">&#xf006;</i>
+            <i style="font-size:24px" class="fa">&#xf006;</i>
+
+          </div>
+          <a href="MoviePages/MortalCombat.html" class="btn btn-primary">Watch</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h3 class="genre">New</h3>
+  <div class="row">
+    <div class="col">
+      <div class="card">
+        <img src="Picture/card/card 5.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Fifty Shades of Grey</h5>
+          
+          <div class="stars">
+            <i style="font-size:24px" class="fa">&#xf006;</i>
+            <i style="font-size:24px" class="fa">&#xf006;</i>
+            <i style="font-size:24px" class="fa">&#xf006;</i>
+            <i style="font-size:24px" class="fa">&#xf006;</i>
+            <i style="font-size:24px" class="fa">&#xf006;</i>
+          </div>
+          <a href="MoviePages/FiftyShades.html" class="btn btn-primary">Watch</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="Picture/card/card 6.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Scouts Guide to the Zombie Apocalypse</h5>
+          
+          <div class="stars">
+            <i style="font-size:24px" class="fa">&#xf006;</i>
+            <i style="font-size:24px" class="fa">&#xf006;</i>
+            <i style="font-size:24px" class="fa">&#xf006;</i>
+            <i style="font-size:24px" class="fa">&#xf006;</i>
+            
+          </div>
+          <a href="MoviePages/ScoutsZombie.html" class="btn btn-primary">Watch</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="Picture/card/card 7.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Jack Reacher</h5>
+          
+          <div class="stars">
+            <i style="font-size:24px" class="fa">&#xf006;</i>
+            <i style="font-size:24px" class="fa">&#xf006;</i>
+            <i style="font-size:24px" class="fa">&#xf006;</i>
+          </div>
+          <a href="MoviePages/JackBreacher.html" class="btn btn-primary">Watch</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="Picture/card/card8.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Kung Fu Panda</h5>
+          
+          <div class="stars">
+            <i style="font-size:24px" class="fa">&#xf006;</i>
+            <i style="font-size:24px" class="fa">&#xf006;</i>
+            <i style="font-size:24px" class="fa">&#xf006;</i>
+            <i style="font-size:24px" class="fa">&#xf006;</i>
+            <i style="font-size:24px" class="fa">&#xf006;</i>
+          </div>
+          <a href="MoviePages/KungfuPanda.html" class="btn btn-primary">Watch</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  <footer class="footer">
+    <div>
+
+      <a href="https://www.instagram.com/0niich4nnn/?fbclid=IwZXh0bgNhZW0CMTAAAR0lXWx1jdfGbqkpcA3LgBYRDkfaDSlVOPP3kMrF2WMz32qy5rly2vVdud8_aem_ARKOzdIe2IOtsm_KqIoe1MzDhWW7HokzwHV3ngjSuE50uiQXOjHHG8SlONVF787_83Ds-LjyfPUgBkXsrXVV5RH9" class="icon"></a> <i class="fa fa-instagram" style="font-size:48px;color:rgb(255, 255, 255)"></i>
+      <a href="#" class="icon"></a> <i class="fa fa-twitter" style="font-size:48px;color:rgb(255, 255, 255)"></i>
+      <a href="https://www.facebook.com/christianreycaasi21" class="icon"></a> <i class="fa fa-facebook-f" style="font-size:48px;color:rgb(255, 255, 255)"></i>
+    </div>
+    <p>© 2024 Company Movies Hub Ltd, All rights reserved</p>
+    <p>Our mailing address is:</p>
+    <address>
+      <a href=""> ChristianReyCaasi@gmail.com, RickRianRamirez@gmail.com </a>
+   <br>
+      Barangay Bolaney <br>
+     Alaminos City Pangasinan
+    </address>
+    <p>You received this email because you are subscribed to Company. If you don't want to hear from us, <a href="#">Click Here</a>.</p>
+    <p>Need assistance? Visit our <a href="HelpCenter.html">Help Center</a>.</p>
+  </footer>
+  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

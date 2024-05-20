@@ -1,0 +1,114 @@
+
+body {
+  background-color: rgb(55, 50, 50);
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.726);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 0cm;
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+  font-size: 3px;
+}
+
+
+.navbar-nav .nav-link {
+  position: relative;
+  font-size: 1.8rem; 
+  color: #ffffff; 
+  margin-right: 30px; 
+}
+
+.navbar-nav .nav-link::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px; 
+  bottom: 0;
+  left: 0;
+  background-color: orange; 
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+
+.form-control {
+  background-color: transparent; 
+  color: rgb(236, 228, 228); 
+  border-color: orange;
+  width: 300px; 
+  height: 60px; 
+  font-size: 20px; 
+}
+
+.form-control:hover {
+  background-color: rgba(0, 0, 0, 0.432);
+  color: white;
+  border-color: orange;
+}
+
+.form-control::placeholder {
+  color: rgb(255, 255, 255); 
+}
+
+.btn-outline-success {
+  color: rgb(247, 247, 247); 
+  border-color: orange; 
+  font-size: 20px; 
+  padding: 10px 20px; 
+}
+
+.btn-outline-success:hover {
+  color: rgb(0, 0, 0); 
+  background-color: orange; 
+}
+
+.custom-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.custom-card {
+  flex: 1 1 300px; 
+  max-width: 300px; 
+  margin: 10px;
+ 
+  border-radius: 5px; 
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); 
+  overflow: hidden; 
+  position: relative; 
+  transition: transform 0.3s ease; 
+}
+
+.custom-card:hover {
+  transform: scale(1.1);
+}
+
+.custom-card img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease; 
+}
+
+.custom-card:hover img {
+  transform: scale(1.1); 
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px; 
+}
