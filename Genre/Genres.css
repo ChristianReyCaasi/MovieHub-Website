@@ -1,0 +1,168 @@
+/* Custom CSS */
+body {
+    background-color: rgb(55, 50, 50);
+  }
+  
+
+  .navbar {
+    background-color: rgba(0, 0, 0, 0.726);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 0cm; /* Adjust padding to increase the size of the navbar */
+  }
+  
+  .navbar-brand,
+  .navbar-nav .nav-link {
+    font-size: 3px; /* Adjust font size to increase the size of navbar elements */
+  }
+  
+ 
+  .navbar-nav .nav-link {
+    position: relative;
+    font-size: 1.8rem; /* Adjust font size as needed */
+    color: #ffffff !important; /* Set text color to black */
+    margin-right: 30px; /* Adjust margin as needed */
+  }
+  
+  .navbar-nav .nav-link::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px; /* Adjust thickness as needed */
+    bottom: 0;
+    left: 0;
+    background-color: orange; /* Change color to orange */
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .navbar-nav .nav-link:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+  
+  /* Search bar styling */
+  .form-control {
+    background-color: transparent; /* Set search bar background color to transparent */
+    color: rgb(236, 228, 228); /* Set search bar text color to black */
+    border-color: orange; /* Set search bar border color to orange */
+    width: 300px; /* Adjust width of the search bar */
+    height: 60px; /* Adjust height of the search bar */
+    font-size: 20px; /* Adjust font size of the search bar */
+  }
+  
+  .form-control:hover {
+    background-color: rgba(0, 0, 0, 0.432);
+    color: white;
+    border-color: orange;
+  }
+  
+  .form-control::placeholder {
+    color: rgb(255, 255, 255); /* Set the placeholder text color to white */
+  }
+  
+  .btn-outline-success {
+    color: rgb(247, 247, 247); /* Set button text color to orange */
+    border-color: orange; /* Set button border color to orange */
+    font-size: 20px; /* Adjust font size of the button */
+    padding: 10px 20px; /* Adjust padding of the button */
+  }
+  
+  .btn-outline-success:hover {
+    color: rgb(0, 0, 0); /* Change button text color to black on hover */
+    background-color: orange; /* Change button background color to orange on hover */
+  }
+
+  .Genre {
+    margin-left: 25px;
+    color: white;
+    font-size: xx-large;
+  }
+  
+  .custom-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .custom-card {
+    flex: 1 1 300px; /* Adjust as needed */
+    max-width: 300px; /* Adjust as needed */
+    margin: 10px;
+   /* Optional: Add border for visual separation */
+    border-radius: 5px; /* Optional: Add border radius for rounded corners */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Optional: Add box shadow for depth */
+    overflow: hidden; /* Hide overflowing content */
+    position: relative; /* Establish relative positioning context */
+    transition: transform 0.3s ease; /* Add transition for smooth effect */
+  }
+  
+  .custom-card:hover {
+    transform: scale(1.1); /* Scale the card on hover */
+  }
+  
+  .custom-card img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease; /* Add transition for smooth effect */
+  }
+  
+  .custom-card:hover img {
+    transform: scale(1.1); /* Scale the image on hover */
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; /* Adjust the gap between cards as needed */
+  }
+  
+
+  /* Styles for tablets */
+@media (max-width: 991.98px) {
+    .navbar-brand img {
+      height: 120px; /* Decrease the height of the logo */
+      width: auto; /* Allow the width to adjust automatically */
+      margin-right: 20px; /* Reduce the margin */
+    }
+  }
+  
+  /* Styles for mobile devices */
+  @media (max-width: 767.98px) {
+    .navbar-brand img {
+      height: 100px; /* Further decrease the height of the logo */
+      margin-right: 10px; /* Reduce the margin */
+    }
+    
+    .navbar-nav .nav-item {
+      margin-bottom: 10px; /* Add space between each nav item */
+    }
+  
+    .carousel-caption {
+      top: 50%; /* Adjust the position of the carousel captions */
+      transform: translateY(-50%);
+    }
+  
+    .c-item {
+      height: 200px; /* Adjust the height of carousel items */
+    }
+  
+    .c-img {
+      object-fit: cover; /* Ensure images cover the entire carousel item */
+      height: 200px; /* Adjust the height of carousel images */
+    }
+  
+    .Genre {
+      text-align: center; /* Center align the genre headings */
+    }
+  
+  
+  
+    .card {
+      width: 307px; /* Set card width to 100% for full width */
+      margin-bottom: 20px; /* Add margin at the bottom of cards */
+    }
+  }

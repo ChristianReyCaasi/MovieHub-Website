@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<title>Help Center</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  .header {
+    background-color: #e0e0e0;
+    padding: 20px;
+    text-align: left;
+  }
+  .header h1 {
+    margin: 0;
+  }
+  .search-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  .search-bar {
+    width: 50%;
+    padding: 10px;
+  }
+  .search-button {
+    padding: 10px 20px;
+    background-color: rgb(255, 0, 0); 
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  .card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  .card {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: calc(33.333% - 40px);
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  .card:hover {
+    transform: scale(1.05);
+  }
+  .card h3 {
+    margin-top: 0;
+  }
+ 
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>Help Center</h1>
+</div>
+<div class="search-container">
+  <input type="text" class="search-bar" placeholder="How can we help you?">
+  <button class="search-button">SEARCH</button>
+</div>
+<div class="card-container">
+  <div class="card">
+    <div class="icon">
+      <i class="fas fa-question-circle"></i>
+    </div>
+    <h3>Getting Started</h3>
+    <p>Learn how to create beautiful app designs knowledge with body</p>
+  </div>
+  <div class="card">
+    <div class="icon">
+      <i class="fas fa-cogs"></i>
+    </div>
+    <h3>Common Issues</h3>
+    <p>Troubleshooting tips for common problems</p>
+  </div>
+  <div class="card">
+    <div class="icon">
+      <i class="fas fa-comment-dots"></i>
+    </div>
+    <h3>Feedback</h3>
+    <p>Share your thoughts and suggestions with us</p>
+  </div>
+  <div class="card">
+    <div class="icon">
+      <i class="fas fa-info-circle"></i>
+    </div>
+    <h3>FAQs</h3>
+    <p>Find answers to frequently asked questions</p>
+  </div>
+  <div class="card">
+    <div class="icon">
+      <i class="fas fa-user"></i>
+    </div>
+    <h3>Account Management</h3>
+    <p>Manage your account settings and preferences</p>
+  </div>
+  <div class="card">
+    <div class="icon">
+      <i class="fas fa-exclamation-triangle"></i>
+    </div>
+    <h3>Emergency Help</h3>
+    <p>Get immediate assistance for urgent issues</p>
+  </div>
+</div>
+</body>
+</html>
